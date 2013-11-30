@@ -1,0 +1,63 @@
+		<html><!--build:4-->
+	<head>
+<title>D.C.C. main page</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+
+	<body>
+<div class='heading'>
+	<h2>[Database Control Center]</h2><br/><br/>
+		<div class='tline' style="margin-left:2%; margin-top:2%"> 
+		<form method="post" action="main.php?sort=name1" name="mode0">
+		<input type="submit" value="Query type: Insert"></form>
+			</div>
+		<div class='tline' style="margin-left:2%; margin-top:0.5%"> 
+		<form method="post" action="main.php?sort=name1">
+		<input type="submit" value="Query type: Modify" name="mode1"></form>
+			</div>
+		<div class='tline' style="margin-left:2%; margin-top:0.5%"> 
+		<form method="post" action="main.php?sort=name1">
+		<input type="submit" value="Query type: Delete" name="mode2"></form>
+			</div>
+</div>
+
+<div class='query'>
+	<p>[MySQL panel]</p><br/><br/>
+	<p>Input identify fields of record you want to delete.</p><br/><br/><br/>
+		<form method="post" action="delete.php">
+			<f>Student's first name:</f>
+				<div class='fbox'><input type="text" name="f1"><br/></div>
+			<f>Student's last name:</f>
+				<div class='fbox'><input type="text" name="f2"><br/></div>
+		<br/>
+		<div class='fbox'><input type="submit" value="Proceed"/></div>
+		</form>
+		<div class='tline' style="margin-left:5%;"> 
+		<form method="post" action="clear.php">
+		<input type="submit" value="Erase all records"></form>
+			</div>
+</div>
+
+<div class='database'>
+<br/><p2>[Students Table]</p2><br/><br/>
+	<div class='tbox'>
+		<table border="1">
+			<tr>
+				<td style="width: 140px;"><a href="http://localhost/main.php?sort=name1">#First name</a></td>
+				<td style="width: 140px;"><a href="http://localhost/main.php?sort=name2">#Last name</a></td>
+				<td style="width: 80px;"><a href="http://localhost/main.php?sort=course">#Course</a></td>
+				<td style="width: 100px;"><a href="http://localhost/main.php?sort=rating">#Rating</a></td>
+			</tr>
+	{% for d in data %}
+			<tr>
+				<td><f>{{ d.name1|escape }}</f></td>
+				<td><f>{{ d.name2|escape }}</f></td>
+				<td><f>{{ d.course|escape }}</f></td>
+				<td><f>{{ d.rating|escape }}</f></td>
+			</tr>
+	{% endfor %}
+</table>
+	</div>
+</div>
+	</body>
+		</html>

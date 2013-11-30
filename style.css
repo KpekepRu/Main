@@ -1,0 +1,121 @@
+body{
+	  background-color: #234D7A;
+	  background-image: url("backg.png");
+	}
+input[type=button], input[type=submit]{
+   width:200px;
+   font-size: 15px;
+   font-variant: small-caps;
+   font-family: arial;
+   color: white;
+   background: #2B4B6B;
+   border: 2px solid #6F8396;
+   
+}
+input[type=text], input[type=integer]{
+   width:160px;
+   font-size: 15px;
+   font-variant: small-caps;
+   font-family: arial;
+   color: black;
+   background: #FFFFFF;
+   border: 2px solid #6F8396;
+}
+a{
+	position: relative;
+	left: 2.5%;
+	font-size: 20px;
+	color: white;
+}
+h2{
+	position: absolute;
+	color: white;
+	top: 0%;
+	left: 6%;
+}	
+p{
+	position: absolute;
+	left: 2%;
+	font-size: 20px;
+	color: white;
+}
+p2{
+	position: relative;
+	left: 2.5%;
+	font-size: 20px;
+	color: white;
+}
+f{
+	position: relative;
+	left: 2.5%;
+	font-size: 20px;
+	color: white;
+}
+h1,h2,h3,h4,p,f,p2,a{
+	font-variant: small-caps;
+	font-family: arial;
+}
+	
+.heading
+{
+border-width: 2px;
+border-style: solid;
+border-color: #6F8396;
+
+	height: 25%;
+	width: 99.6%;
+	background-color: #416891;
+	background: rgba(65,104,145,0.55);
+}
+.query
+{
+border-width: 2px;
+border-style: solid;
+border-color: #6F8396;
+
+	z-index: 1;
+	margin-top: 1%;
+	float: left;
+	height: 60%;
+	width: 54.6%;
+	background: rgba(65,104,145,0.55);
+}
+.database
+{	
+border-width: 2px;
+border-style: solid;
+border-color: #6F8396;
+
+	margin-top: 1%;
+	float: right;
+	height: 60%;
+	width: 43.6%;
+	background: rgba(65,104,145,0.55);
+}
+.fbox
+{
+	z-index: 2;
+	margin-left: 5%;
+	height: 6.6%;
+	width: 22.2%;
+}
+.tbox
+{
+border-width: 2px;
+border-style: solid;
+border-color: #6F8396;
+	
+	z-index: 2;
+	margin-left: 5%;
+	background-color: #2B4B6B;
+	height: 76%;
+	width: 90%;
+	overflow-y: scroll;
+    overflow-x: hidden;
+}
+.tline
+{
+	z-index: 2;
+	height: 15%;
+	width: 25%;
+}
